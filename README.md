@@ -3,4 +3,4 @@
 AI_Bot/venv/Lib/site-packages/
 
 
-Django, fontTools, matplotlib is not uploaded yet
+Django, fontTools, matplotlib, numpy is not uploaded yet
