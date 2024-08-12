@@ -105,6 +105,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Define STATIC_ROOT to a directory where static files will be collected
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Ensure you have this in your settings for serving static files with WhiteNoise
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
 # Media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
